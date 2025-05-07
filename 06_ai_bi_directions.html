@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<!-- saved from url=(0146)https://page.genspark.site/slide_agent/54d3ab07-29e2-4ab6-b665-4b113e9b455e/bi_future_development_trends_849cac90-bf91-432f-a286-cc90c09aecdb.html -->
+<html lang="zh"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI+BI融合的主要方向</title>
+    <link href="./tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+   
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            font-family: 'Noto Sans SC', sans-serif;
+        }
+        .slide {
+            width: 1280px;
+            min-height: 720px;
+            position: relative;
+            background: linear-gradient(135deg, #0a2e5c 0%, #1e5799 100%);
+            color: white;
+            overflow: hidden;
+        }
+        .header {
+            padding: 50px 0 20px 80px;
+            position: relative;
+            z-index: 2;
+        }
+        .title {
+            font-size: 42px;
+            font-weight: 700;
+        }
+        .subtitle {
+            font-size: 22px;
+            font-weight: 300;
+            color: #8bb8e8;
+            margin-top: 5px;
+        }
+        .divider {
+            height: 4px;
+            width: 80px;
+            background: linear-gradient(90deg, #4a9eff, transparent);
+            margin: 15px 0 25px 0;
+        }
+        .content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+            z-index: 2;
+            padding: 0 40px;
+        }
+        .hexagon-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            width: 100%;
+            max-width: 1000px;
+            margin: 0 auto;
+            position: relative;
+        }
+        .hexagon {
+            width: 250px;
+            height: 220px;
+            margin: 15px;
+            position: relative;
+            background: rgba(255, 255, 255, 0.08);
+            border-radius: 15px;
+            backdrop-filter: blur(5px);
+            padding: 25px;
+            text-align: center;
+            transition: all 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+        .hexagon:hover {
+            transform: translateY(-10px);
+            background: rgba(74, 158, 255, 0.15);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+        }
+        .hexagon::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, transparent, rgba(74, 158, 255, 0.8), transparent);
+        }
+        .hexagon-icon {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+            color: #4a9eff;
+            width: 70px;
+            height: 70px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            background: rgba(74, 158, 255, 0.1);
+            box-shadow: 0 0 15px rgba(74, 158, 255, 0.2);
+        }
+        .hexagon-title {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 10px;
+            color: white;
+        }
+        .hexagon-description {
+            font-size: 14px;
+            color: rgba(255, 255, 255, 0.8);
+        }
+        .center-hexagon {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            background: rgba(74, 158, 255, 0.8);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 18px;
+            box-shadow: 0 0 20px rgba(74, 158, 255, 0.4);
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 3;
+        }
+        .connection-lines {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            pointer-events: none;
+        }
+        .background-pattern {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 50%;
+            height: 100%;
+            background-image: 
+                radial-gradient(circle, rgba(255,255,255,0.03) 1px, transparent 1px);
+            background-size: 20px 20px;
+            z-index: 1;
+        }
+        .footer {
+            position: absolute;
+            bottom: 20px;
+            left: 80px;
+            font-size: 14px;
+            color: rgba(255, 255, 255, 0.6);
+            z-index: 2;
+        }
+        .row {
+            display: flex;
+            justify-content: center;
+        }
+        .row-1, .row-3 {
+            margin-top: -30px;
+        }
+    </style>
+<style id="slide-selected-style">
+  [data-slide-selected]::before
+  /* [data-slide-hover-selected]::before */ {
+    content: '';
+    position: absolute;
+    top: -4px;
+    left: -4px;
+    width: 100%;
+    height: 100%;
+    box-sizing: content-box;
+    padding: 4px;
+    border-radius: 0px;
+    outline: 2px solid #0f7fff !important;
+    z-index: 10000;
+    pointer-events: none;
+  }
+
+ /* [data-slide-hover-selected], */
+  [data-slide-selected] {
+    position: relative;
+    outline: none;
+    cursor: default;
+  }
+
+  img[data-slide-selected],
+  img[data-slide-hover-selected],
+  [data-slide-hover-selected],
+  [item-slide-click-selected],
+  [item-slide-selected] {
+    border: 2px solid #0f7fff !important;
+  }
+</style></head>
+<body>
+    <div class="slide">
+        <div class="background-pattern"></div>
+        
+        <div class="header">
+            <h1 class="title">AI+BI融合的主要方向</h1>
+            <div class="divider"></div>
+            <p class="subtitle">人工智能与商业智能的五大关键结合点</p>
+        </div>
+        
+        <div class="content">
+            <div class="hexagon-container">
+                <svg class="connection-lines" viewBox="0 0 1000 500" xmlns="http://www.w3.org/2000/svg">
+                    <!-- 连接线 -->
+                    <path d="M500,250 L280,150" stroke="rgba(74, 158, 255, 0.4)" stroke-width="2"></path>
+                    <path d="M500,250 L720,150" stroke="rgba(74, 158, 255, 0.4)" stroke-width="2"></path>
+                    <path d="M500,250 L280,350" stroke="rgba(74, 158, 255, 0.4)" stroke-width="2"></path>
+                    <path d="M500,250 L720,350" stroke="rgba(74, 158, 255, 0.4)" stroke-width="2"></path>
+                    <path d="M500,250 L500,120" stroke="rgba(74, 158, 255, 0.4)" stroke-width="2"></path>
+                </svg>
+                
+                <!-- 顶部 -->
+                <div class="hexagon" style="margin-top: -30px;">
+                    <div class="hexagon-icon">
+                        <i class="fas fa-comment-dots"></i>
+                    </div>
+                    <h3 class="hexagon-title">自然语言交互</h3>
+                    <p class="hexagon-description">用自然语言提问并获取数据洞察，无需SQL或复杂操作，降低BI使用门槛，实现"对话式分析"体验。</p>
+                </div>
+
+                <div class="row row-1">
+                    <!-- 第二行左侧 -->
+                    <div class="hexagon">
+                        <div class="hexagon-icon">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <h3 class="hexagon-title">智能数据准备</h3>
+                        <p class="hexagon-description">自动数据清洗、转换和集成，减少80%数据准备工作量，识别异常值和缺失数据，提升数据质量。</p>
+                    </div>
+                    
+                    <!-- 第二行右侧 -->
+                    <div class="hexagon">
+                        <div class="hexagon-icon">
+                            <i class="fas fa-lightbulb"></i>
+                        </div>
+                        <h3 class="hexagon-title">自动化洞察发现</h3>
+                        <p class="hexagon-description">主动识别数据中的趋势、异常和关联，无需人工假设，直接推送关键洞察，解决"不知道问什么"问题。</p>
+                    </div>
+                </div>
+
+                <div class="row row-3">
+                    <!-- 第三行左侧 -->
+                    <div class="hexagon">
+                        <div class="hexagon-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3 class="hexagon-title">预测分析与推荐</h3>
+                        <p class="hexagon-description">基于历史数据预测未来趋势，提供智能决策建议，从"发生了什么"到"应该怎么做"，增强BI的前瞻性。</p>
+                    </div>
+                    
+                    <!-- 第三行右侧 -->
+                    <div class="hexagon">
+                        <div class="hexagon-icon">
+                            <i class="fas fa-chart-pie"></i>
+                        </div>
+                        <h3 class="hexagon-title">智能可视化</h3>
+                        <p class="hexagon-description">自动选择最合适的图表类型，智能布局和配色，根据数据特征和分析目的生成最佳可视化方案。</p>
+                    </div>
+                </div>
+                
+                <div class="center-hexagon">
+                    AI+BI
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer">BI的未来发展趋势：AI与BI的融合之路</div>
+    </div>
+
+
+</body></html>

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BI的未来发展趋势：AI与BI的融合之路</title>
+    <link href="./tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            font-family: 'Noto Sans SC', sans-serif;
+        }
+
+        .slide {
+            width: 1280px;
+            min-height: 720px;
+            position: relative;
+            background: linear-gradient(135deg, #0a2e5c 0%, #1e5799 100%);
+            color: white;
+            overflow: hidden;
+        }
+
+        .data-visualization {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0.08;
+            z-index: 0;
+        }
+
+        .content {
+            position: relative;
+            z-index: 2;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            padding: 80px 0 0 80px;
+        }
+
+        .title {
+            font-size: 3.8rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            line-height: 1.2;
+            text-align: left;
+        }
+
+        .subtitle {
+            font-size: 1.7rem;
+            font-weight: 300;
+            margin-bottom: 3.5rem;
+            color: #b2d4f7;
+            text-align: left;
+        }
+
+        .date {
+            font-size: 1.1rem;
+            font-weight: 400;
+            color: #e0e6f0;
+            margin-top: 0;
+            margin-bottom: 0;
+            text-align: left;
+        }
+
+        .grid-pattern {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 50%;
+            height: 50%;
+            background-image:
+                radial-gradient(circle, rgba(255, 255, 255, 0.08) 1px, transparent 1px),
+                radial-gradient(circle, rgba(255, 255, 255, 0.08) 1px, transparent 1px);
+            background-size: 20px 20px;
+            background-position: 0 0, 10px 10px;
+            transform: rotate(-15deg) translateX(10%) translateY(10%);
+            z-index: 1;
+        }
+
+        .floating-icons {
+            position: absolute;
+            top: 60px;
+            right: 60px;
+            display: flex;
+            flex-direction: column;
+            gap: 32px;
+            z-index: 3;
+        }
+
+        .icon-container {
+            width: 56px;
+            height: 56px;
+            border-radius: 50%;
+            background-color: rgba(180, 210, 255, 0.13);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.18);
+            border: 1.5px solid rgba(255, 255, 255, 0.08);
+        }
+
+        .icon-container i {
+            color: #b2d4f7;
+        }
+    </style>
+    <style id="slide-selected-style">
+        [data-slide-selected]::before
+
+        /* [data-slide-hover-selected]::before */
+            {
+            content: '';
+            position: absolute;
+            top: -4px;
+            left: -4px;
+            width: 100%;
+            height: 100%;
+            box-sizing: content-box;
+            padding: 4px;
+            border-radius: 0px;
+            outline: 2px solid #0f7fff !important;
+            z-index: 10000;
+            pointer-events: none;
+        }
+
+        /* [data-slide-hover-selected], */
+        [data-slide-selected] {
+            position: relative;
+            outline: none;
+            cursor: default;
+        }
+
+        img[data-slide-selected],
+        img[data-slide-hover-selected],
+        [data-slide-hover-selected],
+        [item-slide-click-selected],
+        [item-slide-selected] {
+            border: 2px solid #0f7fff !important;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="slide">
+        <!-- 背景图案 -->
+        <div class="data-visualization">
+            <svg width="100%" height="100%" viewBox="0 0 1280 720" xmlns="http://www.w3.org/2000/svg">
+                <!-- 数据可视化背景元素 -->
+                <g fill="none" stroke="white" stroke-width="1">
+                    <!-- 连接线 -->
+                    <path d="M100,200 C400,100 800,300 1200,150" opacity="0.2"></path>
+                    <path d="M50,400 C350,450 750,350 1250,500" opacity="0.2"></path>
+                    <path d="M200,600 C450,550 800,650 1100,550" opacity="0.2"></path>
+
+                    <!-- 数据点 -->
+                    <circle cx="100" cy="200" r="5" fill="white" opacity="0.4"></circle>
+                    <circle cx="400" cy="100" r="8" fill="white" opacity="0.4"></circle>
+                    <circle cx="800" cy="300" r="6" fill="white" opacity="0.4"></circle>
+                    <circle cx="1200" cy="150" r="10" fill="white" opacity="0.4"></circle>
+
+                    <circle cx="50" cy="400" r="7" fill="white" opacity="0.4"></circle>
+                    <circle cx="350" cy="450" r="9" fill="white" opacity="0.4"></circle>
+                    <circle cx="750" cy="350" r="5" fill="white" opacity="0.4"></circle>
+                    <circle cx="1250" cy="500" r="8" fill="white" opacity="0.4"></circle>
+
+                    <circle cx="200" cy="600" r="6" fill="white" opacity="0.4"></circle>
+                    <circle cx="450" cy="550" r="10" fill="white" opacity="0.4"></circle>
+                    <circle cx="800" cy="650" r="7" fill="white" opacity="0.4"></circle>
+                    <circle cx="1100" cy="550" r="9" fill="white" opacity="0.4"></circle>
+                </g>
+            </svg>
+        </div>
+
+        <div class="grid-pattern"></div>
+        <div class="floating-line"></div>
+
+        <!-- 浮动图标 -->
+        <div class="floating-icons">
+            <div class="icon-container">
+                <i class="fas fa-chart-pie fa-2x text-blue-200"></i>
+            </div>
+            <div class="icon-container">
+                <i class="fas fa-brain fa-2x text-blue-200"></i>
+            </div>
+            <div class="icon-container">
+                <i class="fas fa-database fa-2x text-blue-200"></i>
+            </div>
+        </div>
+
+        <!-- 内容 -->
+        <div class="content">
+            <h1 class="title">BI的未来发展趋势：<br>AI与BI的融合之路</h1>
+            <h2 class="subtitle">数据智能的下一个时代</h2>
+            <h3 class="subtitle">Bobby CAI</h2>
+            <div class="date">2025年5月</div>
+        </div>
+    </div>
+</body>
+
+</html>

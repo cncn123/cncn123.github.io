@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<!-- saved from url=(0146)https://page.genspark.site/slide_agent/54d3ab07-29e2-4ab6-b665-4b113e9b455e/bi_future_development_trends_5f1e1c4f-f993-46f6-bf30-269a11b18ee1.html -->
+<html lang="zh"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BI的发展历程</title>
+    <link href="./tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+   
+    <script src="./mermaid.min.js"></script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            font-family: 'Noto Sans SC', sans-serif;
+        }
+        .slide {
+            width: 1280px;
+            min-height: 720px;
+            position: relative;
+            background: linear-gradient(135deg, #0a2e5c 0%, #1e5799 100%);
+            color: white;
+            overflow: hidden;
+        }
+        .header {
+            padding: 50px 0 20px 80px;
+            position: relative;
+            z-index: 2;
+        }
+        .title {
+            font-size: 42px;
+            font-weight: 700;
+        }
+        .subtitle {
+            font-size: 22px;
+            font-weight: 300;
+            color: #8bb8e8;
+            margin-top: 5px;
+        }
+        .timeline-container {
+            padding: 0 60px;
+            position: relative;
+            z-index: 2;
+        }
+        .background-pattern {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 50%;
+            height: 100%;
+            background-image: 
+                radial-gradient(circle, rgba(255,255,255,0.05) 1px, transparent 1px);
+            background-size: 20px 20px;
+            z-index: 1;
+        }
+        .footer {
+            position: absolute;
+            bottom: 20px;
+            left: 80px;
+            font-size: 14px;
+            color: rgba(255, 255, 255, 0.6);
+            z-index: 2;
+        }
+        .divider {
+            height: 4px;
+            width: 80px;
+            background: linear-gradient(90deg, #4a9eff, transparent);
+            margin: 15px 0 25px 0;
+        }
+        .stage-cards {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 40px;
+            padding: 0 40px;
+        }
+        .stage-card {
+            width: 30%;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 8px;
+            padding: 25px;
+            backdrop-filter: blur(5px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s;
+            position: relative;
+            overflow: hidden;
+        }
+        .stage-card:hover {
+            transform: translateY(-10px);
+        }
+        .stage-card::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #4a9eff, #00d0ff);
+        }
+        .card-title {
+            font-size: 22px;
+            font-weight: 600;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+        }
+        .card-title i {
+            margin-right: 12px;
+        }
+        .feature-list {
+            margin-top: 15px;
+        }
+        .feature-item {
+            margin-bottom: 10px;
+            display: flex;
+            align-items: flex-start;
+        }
+        .feature-item i {
+            margin-right: 10px;
+            color: #4a9eff;
+            margin-top: 4px;
+        }
+        .year-tag {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: rgba(74, 158, 255, 0.2);
+            border-radius: 12px;
+            padding: 4px 12px;
+            font-size: 14px;
+            font-weight: 500;
+        }
+    
+    </style>
+<style id="slide-selected-style">
+  [data-slide-selected]::before
+  /* [data-slide-hover-selected]::before */ {
+    content: '';
+    position: absolute;
+    top: -4px;
+    left: -4px;
+    width: 100%;
+    height: 100%;
+    box-sizing: content-box;
+    padding: 4px;
+    border-radius: 0px;
+    outline: 2px solid #0f7fff !important;
+    z-index: 10000;
+    pointer-events: none;
+  }
+
+ /* [data-slide-hover-selected], */
+  [data-slide-selected] {
+    position: relative;
+    outline: none;
+    cursor: default;
+  }
+
+  img[data-slide-selected],
+  img[data-slide-hover-selected],
+  [data-slide-hover-selected],
+  [item-slide-click-selected],
+  [item-slide-selected] {
+    border: 2px solid #0f7fff !important;
+  }
+</style>
+</head>
+<body>
+    <div class="slide">
+        <div class="background-pattern"></div>
+        
+        <div class="header">
+            <h1 class="title">BI的发展历程</h1>
+            <div class="divider"></div>
+            <p class="subtitle">从传统报表到智能分析的演进</p>
+        </div>
+
+       
+        
+        <div class="stage-cards">
+            <div class="stage-card">
+                <div class="year-tag">1990-2010</div>
+                <h3 class="card-title">
+                    <i class="fas fa-file-alt text-blue-300"></i>
+                    传统报表BI
+                </h3>
+                <div class="feature-list">
+                    <div class="feature-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span>IT主导的数据处理模式</span>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span>静态报表为主要交付形式</span>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span>以描述性分析为主</span>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span>技术门槛高，开发周期长</span>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span>代表技术：OLAP、数据仓库</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="stage-card">
+                <div class="year-tag">2010-2020</div>
+                <h3 class="card-title">
+                    <i class="fas fa-desktop text-blue-300"></i>
+                    自助式BI
+                </h3>
+                <div class="feature-list">
+                    <div class="feature-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span>业务人员可自行分析数据</span>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span>可视化拖拽界面设计</span>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span>交互式仪表盘</span>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span>增加预测性分析功能</span>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span>代表技术：数据可视化、移动BI</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="stage-card">
+                <div class="year-tag">2020至今</div>
+                <h3 class="card-title">
+                    <i class="fas fa-brain text-blue-300"></i>
+                    智能BI
+                </h3>
+                <div class="feature-list">
+                    <div class="feature-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span>AI技术深度融合</span>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span>自然语言交互</span>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span>自动数据洞察发现</span>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span>智能推荐与决策支持</span>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span>代表技术：大模型、NLP、机器学习</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer">BI的未来发展趋势：AI与BI的融合之路</div>
+    </div>
+    
+    <script>
+        mermaid.initialize({
+            startOnLoad: true,
+            theme: 'dark',
+            securityLevel: 'loose'
+        });
+    </script>
+        </body></html>

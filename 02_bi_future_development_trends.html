@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="zh"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>目录 - BI的未来发展趋势</title>
+    <link href="./tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+   
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            font-family: 'Noto Sans SC', sans-serif;
+        }
+        .slide {
+            width: 1280px;
+            min-height: 720px;
+            position: relative;
+            background: linear-gradient(to right, #0c3b6a, #1a4980);
+            color: white;
+        }
+        .header {
+            padding: 60px 0 30px 80px;
+        }
+        .title {
+            font-size: 48px;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+        .subtitle {
+            font-size: 22px;
+            font-weight: 300;
+            color: #8bb8e8;
+        }
+        .content {
+            padding: 0 80px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 40px 60px;
+        }
+        .content-item {
+            display: flex;
+            align-items: center;
+            transition: transform 0.3s;
+        }
+        .content-item:hover {
+            transform: translateX(10px);
+        }
+        .icon-container {
+            width: 60px;
+            height: 60px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 20px;
+            position: relative;
+            overflow: hidden;
+        }
+        .icon-container::before {
+            content: "";
+            position: absolute;
+            top: -10px;
+            left: -10px;
+            right: -10px;
+            bottom: -10px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 50%;
+        }
+        .icon-number {
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            background: #1565c0;
+            border-radius: 50%;
+            width: 22px;
+            height: 22px;
+            font-size: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .text-container {
+            font-size: 20px;
+            font-weight: 500;
+        }
+        .background-pattern {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 300px;
+            height: 300px;
+            background-image: 
+                linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+            background-size: 20px 20px;
+            opacity: 0.5;
+            z-index: 0;
+        }
+        .divider {
+            height: 4px;
+            width: 80px;
+            background: linear-gradient(90deg, #4a9eff, transparent);
+            margin: 20px 0;
+        }
+        .footer {
+            position: absolute;
+            bottom: 30px;
+            left: 80px;
+            font-size: 14px;
+            color: rgba(255, 255, 255, 0.6);
+        }
+        .corner-decoration {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 200px;
+            height: 200px;
+            background: radial-gradient(circle, rgba(74, 158, 255, 0.2) 0%, rgba(10, 60, 108, 0) 70%);
+            border-radius: 50%;
+            transform: translate(50%, 50%);
+        }
+    </style>
+<style id="slide-selected-style">
+  [data-slide-selected]::before
+  /* [data-slide-hover-selected]::before */ {
+    content: '';
+    position: absolute;
+    top: -4px;
+    left: -4px;
+    width: 100%;
+    height: 100%;
+    box-sizing: content-box;
+    padding: 4px;
+    border-radius: 0px;
+    outline: 2px solid #0f7fff !important;
+    z-index: 10000;
+    pointer-events: none;
+  }
+
+ /* [data-slide-hover-selected], */
+  [data-slide-selected] {
+    position: relative;
+    outline: none;
+    cursor: default;
+  }
+
+  img[data-slide-selected],
+  img[data-slide-hover-selected],
+  [data-slide-hover-selected],
+  [item-slide-click-selected],
+  [item-slide-selected] {
+    border: 2px solid #0f7fff !important;
+  }
+
+
+</style></head>
+<body>
+    <div class="slide">
+        <div class="background-pattern"></div>
+        
+        <div class="header">
+            <h1 class="title">目录</h1>
+            <div class="divider"></div>
+            <p class="subtitle">AI与BI融合之路的主要内容</p>
+        </div>
+        
+        <div class="content">
+            <div class="content-item">
+                <div class="icon-container">
+                    <i class="fas fa-history fa-lg text-blue-200"></i>
+                    <span class="icon-number">1</span>
+                </div>
+                <div class="text-container">BI的发展历程</div>
+            </div>
+            
+            <div class="content-item">
+                <div class="icon-container">
+                    <i class="fas fa-exclamation-triangle fa-lg text-blue-200"></i>
+                    <span class="icon-number">2</span>
+                </div>
+                <div class="text-container">当前BI面临的挑战</div>
+            </div>
+            
+            <div class="content-item">
+                <div class="icon-container">
+                    <i class="fas fa-puzzle-piece fa-lg text-blue-200"></i>
+                    <span class="icon-number">3</span>
+                </div>
+                <div class="text-container">AI与BI融合的必然性</div>
+            </div>
+            
+            <div class="content-item">
+                <div class="icon-container">
+                    <i class="fas fa-directions fa-lg text-blue-200"></i>
+                    <span class="icon-number">4</span>
+                </div>
+                <div class="text-container">AI+BI融合的主要方向</div>
+            </div>
+            
+            <div class="content-item">
+                <div class="icon-container">
+                    <i class="fas fa-chart-line fa-lg text-blue-200"></i>
+                    <span class="icon-number">5</span>
+                </div>
+                <div class="text-container">融合带来的价值</div>
+            </div>
+            
+            <div class="content-item">
+                <div class="icon-container">
+                    <i class="fas fa-laptop-code fa-lg text-blue-200"></i>
+                    <span class="icon-number">6</span>
+                </div>
+                <div class="text-container">典型应用场景</div>
+            </div>
+            
+            <div class="content-item">
+                <div class="icon-container">
+                    <i class="fas fa-binoculars fa-lg text-blue-200"></i>
+                    <span class="icon-number">7</span>
+                </div>
+                <div class="text-container">未来趋势预测</div>
+            </div>
+            
+            <div class="content-item">
+                <div class="icon-container">
+                    <i class="fas fa-file-alt fa-lg text-blue-200"></i>
+                    <span class="icon-number">8</span>
+                </div>
+                <div class="text-container">总结与展望</div>
+            </div>
+        </div>
+        
+        <div class="corner-decoration"></div>
+        <div class="footer">BI的未来发展趋势：AI与BI的融合之路</div>
+    </div>
+        </body></html>
